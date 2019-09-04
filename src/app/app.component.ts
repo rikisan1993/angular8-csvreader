@@ -75,4 +75,8 @@ export class AppComponent {
     this.csvReader.nativeElement.value = "";
     this.records = [];
   }
+
+  trackFn(index, value:CSVRecord) {
+    return value.id;
+  }
 }
