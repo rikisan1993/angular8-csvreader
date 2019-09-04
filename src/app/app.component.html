@@ -9,7 +9,7 @@
     <th>Mobile</th>
   </thead>
   <tbody>
-    <tr *ngFor="let record of records; let i = index; trackBy = trackFn">
+    <tr *ngFor="let record of records; let i = index; trackBy: trackFn">
       <td><span>{{record.id}}</span></td>
       <td><span>{{record.firstName}}</span></td>
       <td><span>{{record.lastName}}</span></td>
